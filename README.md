@@ -9,10 +9,10 @@ A very simple exmaple project about using [Bert ETL](https://bert-etl.readthedoc
 ```
 $ virtualenv -p $(which python3) env
 $ pip install bert-etl -U
-$ mkdir /tmp/bert-etl
-$ cd /tmp/bert-etl
-$ bert-example.py -n simple-project
+$ bert-example.py -n simple-project -d /tmp/bert-etl
 $ docker run -p 6379:6379 -d redis
+
+$ cd /tmp/bert-etl
 $ bert-runner.py -m simple_project -f
 ```
 
@@ -22,10 +22,10 @@ $ bert-runner.py -m simple_project -f
 $ conda create --name bert-etl-simple-project python=3.7
 $ conda activate bert-etl-simple-project
 $ pip install bert-etl -U
-$ mkdir /tmp/bert-etl
-$ cd /tmp/bert-etl
-$ bert-example.py -n simple-project
+$ bert-example.py -n simple-project -d /tmp/bert-etl
 $ docker run -p 6379:6379 -d redis
+
+$ cd /tmp/bert-etl
 $ bert-runner.py -m simple_project -f
 ```
 
