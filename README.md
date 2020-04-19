@@ -8,6 +8,7 @@ A very simple exmaple project about using [Bert ETL](https://bert-etl.readthedoc
 
 ```
 $ virtualenv -p $(which python3) env
+$ source env/bin/activate
 $ pip install bert-etl -U
 $ bert-example.py -n simple-project -d /tmp/bert-etl
 $ docker run -p 6379:6379 -d redis
