@@ -1,6 +1,8 @@
-# Bert ETL Simple Project
+# Bert ETL TESS Exoplanet Search
 
-A very simple exmaple project about using [Bert ETL](https://bert-etl.readthedocs.io/en/latest/)
+( Details to come; stubed git-repo )
+
+[Bert ETL](https://bert-etl.readthedocs.io/en/latest/)
 
 ## Getting Started
 
@@ -10,23 +12,23 @@ A very simple exmaple project about using [Bert ETL](https://bert-etl.readthedoc
 $ virtualenv -p $(which python3) env
 $ source env/bin/activate
 $ pip install bert-etl -U
-$ bert-example.py -n simple-project -d /tmp/bert-etl
+$ bert-example.py -n tess-exoplanet-search
 $ docker run -p 6379:6379 -d redis
 
-$ cd /tmp/bert-etl
-$ bert-runner.py -m simple_project -f
+$ cd /tmp/tess-exoplanet-search/
+$ bert-runner.py -m tess_exoplanet_search -f
 ```
 
 ### Running the example with `conda`
 
 ```
-$ conda create --name bert-etl-simple-project python=3.7
-$ conda activate bert-etl-simple-project
+$ conda create --name bert-etl-tess-exoplanet-search python=3.7
+$ conda activate bert-etl-tess-exoplanet-search
 $ pip install bert-etl -U
-$ bert-example.py -n simple-project -d /tmp/bert-etl
+$ bert-example.py -n tess-exoplanet-search
 $ docker run -p 6379:6379 -d redis
 
-$ cd /tmp/bert-etl
-$ bert-runner.py -m simple_project -f
+$ cd /tmp/tess-exoplanet-search/
+$ bert-runner.py -m tess_exoplanet_search -f
 ```
 
